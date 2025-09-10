@@ -4,11 +4,199 @@
     "x": 0,
     "y": 0,
     "uniqueID": "1fca6c13-3713-4023-b192-f5a9f8c668b8",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "spice bottle diam",
+            "ioValue": 2,
+            "currentEquation": "2"
+        },
+        {
+            "name": "number per row",
+            "ioValue": 3,
+            "currentEquation": "3"
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "965c161e-ce10-41ff-823d-e63df5bcf93d",
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Input",
+            "name": "spice bottle diam",
+            "x": 0.025384615384615384,
+            "y": 0.41566265060240964,
+            "uniqueID": "606e49b9-399a-41f9-8d22-9ae6f11e27f0",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "number per row",
+            "x": 0.025384615384615384,
+            "y": 0.5783132530120482,
+            "uniqueID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Spice hole",
+            "x": 0.2549212598425197,
+            "y": 0.39457831325301207,
+            "uniqueID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
+            "ioValues": [
+                {
+                    "name": "spice bottle diam",
+                    "ioValue": 2,
+                    "currentEquation": null
+                },
+                {
+                    "name": "number per row",
+                    "ioValue": 3,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "e3cad587-90cb-4f2b-8da8-e0b234d3c40f",
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "spice bottle diam",
+                    "x": 0.025384615384615384,
+                    "y": 0.39457831325301207,
+                    "uniqueID": "c006c75c-b540-4f0c-974f-6b9de511f380",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "geometry"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "number per row",
+                    "x": 0.025384615384615384,
+                    "y": 0.569277108433735,
+                    "uniqueID": "f42cb6e0-808f-4418-8862-652d5e7a11af",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "geometry"
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.2618110236220472,
+                    "y": 0.3403614457831325,
+                    "uniqueID": "98f04fe3-e4b1-4b5b-be46-a2a019203def",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 2,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4645669291338583,
+                    "y": 0.3704819277108434,
+                    "uniqueID": "176eb577-eb06-4e31-84f7-e091fa28853d",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "98f04fe3-e4b1-4b5b-be46-a2a019203def",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 5,
+                            "currentEquation": "5"
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negative."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.2854330708661417,
+                    "y": 0.5542168674698795,
+                    "uniqueID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x",
+                    "x": 0.203740157480315,
+                    "y": 0.5210843373493976,
+                    "uniqueID": "dc264c7d-a1b4-4ae5-b3d0-3f6a5653f348",
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 1,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "x"
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "diameter",
+                    "ap1ID": "c006c75c-b540-4f0c-974f-6b9de511f380",
+                    "ap2ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def",
+                    "ap2ID": "176eb577-eb06-4e31-84f7-e091fa28853d"
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "spice bottle diam",
+            "ap1ID": "606e49b9-399a-41f9-8d22-9ae6f11e27f0",
+            "ap2ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "number per row",
+            "ap1ID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
+            "ap2ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd"
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
