@@ -116,8 +116,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4645669291338583,
-                    "y": 0.3704819277108434,
+                    "x": 0.4655511811023622,
+                    "y": 0.39457831325301207,
                     "uniqueID": "176eb577-eb06-4e31-84f7-e091fa28853d",
                     "ioValues": [
                         {
@@ -136,33 +136,38 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.2854330708661417,
-                    "y": 0.5542168674698795,
+                    "x": 0.32086614173228345,
+                    "y": 0.5873493975903614,
                     "uniqueID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
                     "ioValues": [
                         {
                             "name": "diameter",
                             "ioValue": 10,
-                            "currentEquation": null
+                            "currentEquation": "10"
                         }
                     ],
                     "description": "Creates a new circle."
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x",
-                    "x": 0.203740157480315,
-                    "y": 0.5210843373493976,
-                    "uniqueID": "dc264c7d-a1b4-4ae5-b3d0-3f6a5653f348",
+                    "name": "x + y",
+                    "x": 0.24311023622047245,
+                    "y": 0.6114457831325302,
+                    "uniqueID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
                     "ioValues": [
                         {
                             "name": "x",
                             "ioValue": 1,
                             "currentEquation": null
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 1,
+                            "currentEquation": null
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x"
+                    "currentEquation": "x + y"
                 }
             ],
             "allConnectors": [
