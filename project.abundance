@@ -75,7 +75,13 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "e3cad587-90cb-4f2b-8da8-e0b234d3c40f",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "58656422-380a-477f-858d-0e11bbcdfb2f",
+                            "currentEquation": null
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -242,8 +248,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.3794749403341289,
-                    "y": 0.7259036144578314,
+                    "x": 0.3460620525059666,
+                    "y": 0.641566265060241,
                     "uniqueID": "7a8c0248-8fb2-4a06-a483-dba0265213e8",
                     "ioValues": [
                         {
@@ -262,8 +268,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.522673031026253,
-                    "y": 0.6927710843373494,
+                    "x": 0.5011933174224343,
+                    "y": 0.6385542168674698,
                     "uniqueID": "f2c89758-baa7-46b0-9770-8db35a8b8982",
                     "ioValues": [
                         {
@@ -282,8 +288,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.6145584725536993,
-                    "y": 0.8192771084337349,
+                    "x": 0.6288782816229117,
+                    "y": 0.572289156626506,
                     "uniqueID": "f169abcd-71a1-4cba-8c38-c74911d400e5",
                     "ioValues": [
                         {
@@ -293,18 +299,18 @@
                         },
                         {
                             "name": "xDist",
+                            "ioValue": 3,
+                            "currentEquation": "3"
+                        },
+                        {
+                            "name": "yDist",
                             "ioValue": 0,
                             "currentEquation": "0"
                         },
                         {
-                            "name": "yDist",
-                            "ioValue": 2,
-                            "currentEquation": "2"
-                        },
-                        {
                             "name": "zDist",
-                            "ioValue": 2,
-                            "currentEquation": "2"
+                            "ioValue": -1,
+                            "currentEquation": "-1"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -312,8 +318,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.7589498806682577,
-                    "y": 0.7349397590361446,
+                    "x": 0.7374701670644391,
+                    "y": 0.5632530120481928,
                     "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ioValues": [
                         {
@@ -323,13 +329,13 @@
                         },
                         {
                             "name": "x-axis degrees",
-                            "ioValue": 35,
-                            "currentEquation": "35"
+                            "ioValue": 0,
+                            "currentEquation": "0"
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": 0,
-                            "currentEquation": "0"
+                            "ioValue": -40,
+                            "currentEquation": "-40"
                         },
                         {
                             "name": "z-axis degrees",
@@ -343,7 +349,7 @@
                     "atomType": "Difference",
                     "name": "Difference",
                     "x": 0.847255369928401,
-                    "y": 0.4337349397590362,
+                    "y": 0.35240963855421686,
                     "uniqueID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2",
                     "ioValues": [
                         {
@@ -354,6 +360,61 @@
                         {
                             "name": "geometry2",
                             "ioValue": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.2852028639618138,
+                    "y": 0.8313253012048193,
+                    "uniqueID": "59515969-35dc-4dc0-8acc-cdaf47beee4e",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 1,
+                            "currentEquation": "1"
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.6801909307875895,
+                    "y": 0.7078313253012049,
+                    "uniqueID": "3ec6de07-77b3-4652-8899-33da7d65b284",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "59515969-35dc-4dc0-8acc-cdaf47beee4e",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negative."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.8591885441527446,
+                    "y": 0.5963855421686747,
+                    "uniqueID": "58656422-380a-477f-858d-0e11bbcdfb2f",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "3ec6de07-77b3-4652-8899-33da7d65b284",
                             "currentEquation": null
                         }
                     ],
@@ -438,10 +499,34 @@
                     "ap2Name": "geometry2",
                     "ap1ID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ap2ID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2",
+                    "ap2ID": "58656422-380a-477f-858d-0e11bbcdfb2f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "59515969-35dc-4dc0-8acc-cdaf47beee4e",
+                    "ap2ID": "3ec6de07-77b3-4652-8899-33da7d65b284"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": "3ec6de07-77b3-4652-8899-33da7d65b284",
+                    "ap2ID": "58656422-380a-477f-858d-0e11bbcdfb2f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "58656422-380a-477f-858d-0e11bbcdfb2f",
+                    "ap2ID": "e3cad587-90cb-4f2b-8da8-e0b234d3c40f"
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [
