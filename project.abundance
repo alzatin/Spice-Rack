@@ -262,8 +262,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.5369928400954654,
-                    "y": 0.8072289156626505,
+                    "x": 0.522673031026253,
+                    "y": 0.6927710843373494,
                     "uniqueID": "f2c89758-baa7-46b0-9770-8db35a8b8982",
                     "ioValues": [
                         {
@@ -282,8 +282,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.6455847255369929,
-                    "y": 0.8313253012048193,
+                    "x": 0.6145584725536993,
+                    "y": 0.8192771084337349,
                     "uniqueID": "f169abcd-71a1-4cba-8c38-c74911d400e5",
                     "ioValues": [
                         {
@@ -294,17 +294,17 @@
                         {
                             "name": "xDist",
                             "ioValue": 0,
-                            "currentEquation": null
+                            "currentEquation": "0"
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 3,
-                            "currentEquation": "3"
+                            "ioValue": 2,
+                            "currentEquation": "2"
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0,
-                            "currentEquation": null
+                            "ioValue": 2,
+                            "currentEquation": "2"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -312,8 +312,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.7565632458233891,
-                    "y": 0.7590361445783133,
+                    "x": 0.7589498806682577,
+                    "y": 0.7349397590361446,
                     "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ioValues": [
                         {
@@ -323,8 +323,8 @@
                         },
                         {
                             "name": "x-axis degrees",
-                            "ioValue": 30,
-                            "currentEquation": "30"
+                            "ioValue": 35,
+                            "currentEquation": "35"
                         },
                         {
                             "name": "y-axis degrees",
@@ -342,8 +342,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.8317422434367541,
-                    "y": 0.463855421686747,
+                    "x": 0.847255369928401,
+                    "y": 0.4337349397590362,
                     "uniqueID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2",
                     "ioValues": [
                         {
