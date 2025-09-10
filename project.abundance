@@ -116,8 +116,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4655511811023622,
-                    "y": 0.39457831325301207,
+                    "x": 0.46658711217183774,
+                    "y": 0.2620481927710844,
                     "uniqueID": "176eb577-eb06-4e31-84f7-e091fa28853d",
                     "ioValues": [
                         {
@@ -136,13 +136,13 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.32086614173228345,
-                    "y": 0.5873493975903614,
+                    "x": 0.3711217183770883,
+                    "y": 0.5030120481927711,
                     "uniqueID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10,
+                            "ioValue": 2.4,
                             "currentEquation": null
                         }
                     ],
@@ -151,8 +151,8 @@
                 {
                     "atomType": "Equation",
                     "name": "x + y",
-                    "x": 0.20763723150357993,
-                    "y": 0.6024096385542169,
+                    "x": 0.20883054892601433,
+                    "y": 0.6265060240963854,
                     "uniqueID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
                     "ioValues": [
                         {
@@ -167,7 +167,197 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x*y"
+                    "currentEquation": "x+x*y"
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4785202863961813,
+                    "y": 0.45783132530120485,
+                    "uniqueID": "1301a279-4e69-4548-8b78-87ed9fdd3fed",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "80b15cb8-5799-41af-84c0-17a1fac99f21",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 4,
+                            "currentEquation": "4"
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negative."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5715990453460621,
+                    "y": 0.3102409638554217,
+                    "uniqueID": "16ff111a-862d-4fd5-824b-d3866b991895",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "176eb577-eb06-4e31-84f7-e091fa28853d",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0.2,
+                            "currentEquation": "0.2"
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.6861575178997613,
+                    "y": 0.4246987951807229,
+                    "uniqueID": "8c79c604-1263-4b6d-b799-0c556206e6f9",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "1301a279-4e69-4548-8b78-87ed9fdd3fed",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "16ff111a-862d-4fd5-824b-d3866b991895",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.3794749403341289,
+                    "y": 0.7259036144578314,
+                    "uniqueID": "7a8c0248-8fb2-4a06-a483-dba0265213e8",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 3,
+                            "currentEquation": "3"
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 3,
+                            "currentEquation": "3"
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.5369928400954654,
+                    "y": 0.8072289156626505,
+                    "uniqueID": "f2c89758-baa7-46b0-9770-8db35a8b8982",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "7a8c0248-8fb2-4a06-a483-dba0265213e8",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negative."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.6455847255369929,
+                    "y": 0.8313253012048193,
+                    "uniqueID": "f169abcd-71a1-4cba-8c38-c74911d400e5",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "f2c89758-baa7-46b0-9770-8db35a8b8982",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 3,
+                            "currentEquation": "3"
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.7565632458233891,
+                    "y": 0.7590361445783133,
+                    "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "f169abcd-71a1-4cba-8c38-c74911d400e5",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 30,
+                            "currentEquation": "30"
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0,
+                            "currentEquation": "0"
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0,
+                            "currentEquation": "0"
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.8317422434367541,
+                    "y": 0.463855421686747,
+                    "uniqueID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "8c79c604-1263-4b6d-b799-0c556206e6f9",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
                 }
             ],
             "allConnectors": [
@@ -188,6 +378,66 @@
                     "ap2Name": "geometry",
                     "ap1ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def",
                     "ap2ID": "176eb577-eb06-4e31-84f7-e091fa28853d"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "176eb577-eb06-4e31-84f7-e091fa28853d",
+                    "ap2ID": "16ff111a-862d-4fd5-824b-d3866b991895"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
+                    "ap2ID": "1301a279-4e69-4548-8b78-87ed9fdd3fed"
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "diameter",
+                    "ap1ID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
+                    "ap2ID": "80b15cb8-5799-41af-84c0-17a1fac99f21"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": "1301a279-4e69-4548-8b78-87ed9fdd3fed",
+                    "ap2ID": "8c79c604-1263-4b6d-b799-0c556206e6f9"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": "16ff111a-862d-4fd5-824b-d3866b991895",
+                    "ap2ID": "8c79c604-1263-4b6d-b799-0c556206e6f9"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": "8c79c604-1263-4b6d-b799-0c556206e6f9",
+                    "ap2ID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "7a8c0248-8fb2-4a06-a483-dba0265213e8",
+                    "ap2ID": "f2c89758-baa7-46b0-9770-8db35a8b8982"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "f2c89758-baa7-46b0-9770-8db35a8b8982",
+                    "ap2ID": "f169abcd-71a1-4cba-8c38-c74911d400e5"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "f169abcd-71a1-4cba-8c38-c74911d400e5",
+                    "ap2ID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
+                    "ap2ID": "1ebc060a-4206-4bc7-8b60-48e3a89c34f2"
                 }
             ],
             "fileTypeVersion": 1,
