@@ -51,8 +51,8 @@
         {
             "atomType": "Molecule",
             "name": "Spice hole",
-            "x": 0.2634920634920635,
-            "y": 0.3885542168674699,
+            "x": 0.2624338624338624,
+            "y": 0.39457831325301207,
             "uniqueID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
             "ioValues": [
                 {
@@ -143,7 +143,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.6,
+                            "ioValue": 5,
                             "currentEquation": null
                         }
                     ],
@@ -151,24 +151,24 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x + y",
-                    "x": 0.19894179894179895,
-                    "y": 0.6234939759036144,
+                    "name": "x+x*y*4",
+                    "x": 0.20105820105820105,
+                    "y": 0.5993975903614458,
                     "uniqueID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 2,
+                            "ioValue": 1,
                             "currentEquation": null
                         },
                         {
                             "name": "y",
-                            "ioValue": 0.3,
-                            "currentEquation": "0.3"
+                            "ioValue": 1,
+                            "currentEquation": null
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x+x*y"
+                    "currentEquation": "x+x*y*4"
                 },
                 {
                     "atomType": "Extrude",
@@ -537,12 +537,6 @@
                     "ap2Name": "diameter",
                     "ap1ID": "c006c75c-b540-4f0c-974f-6b9de511f380",
                     "ap2ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def"
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x",
-                    "ap1ID": "c006c75c-b540-4f0c-974f-6b9de511f380",
-                    "ap2ID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c"
                 },
                 {
                     "ap1Name": "geometry",
