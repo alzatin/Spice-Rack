@@ -13,7 +13,7 @@
         {
             "name": "number per row",
             "ioValue": 5,
-            "currentEquation": "5"
+            "currentEquation": null
         },
         {
             "name": "Singlehold_width",
@@ -93,7 +93,7 @@
                 {
                     "name": "xDist",
                     "ioValue": -1.25,
-                    "currentEquation": "-1.25"
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
