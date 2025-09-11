@@ -19,6 +19,11 @@
             "name": "Input (1)",
             "ioValue": 10,
             "currentEquation": null
+        },
+        {
+            "name": "Singlehold_width",
+            "ioValue": 2.25,
+            "currentEquation": "2.25"
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -66,13 +71,23 @@
         {
             "atomType": "Molecule",
             "name": "Spice hole",
-            "x": 0.3288201160541586,
-            "y": 0.4367469879518072,
+            "x": 0.33462282398452614,
+            "y": 0.4307228915662651,
             "uniqueID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
             "ioValues": [
                 {
                     "name": "spice bottle diam",
                     "ioValue": 2,
+                    "currentEquation": null
+                },
+                {
+                    "name": "number per row",
+                    "ioValue": 3,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Singlehold_width",
+                    "ioValue": 2.25,
                     "currentEquation": null
                 }
             ],
@@ -102,53 +117,32 @@
                     "uniqueID": "c006c75c-b540-4f0c-974f-6b9de511f380",
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "geometry"
+                    "type": "number"
                 },
                 {
                     "atomType": "Input",
                     "name": "number per row",
                     "x": 0.025384615384615384,
-                    "y": 0.569277108433735,
+                    "y": 0.572289156626506,
                     "uniqueID": "f42cb6e0-808f-4418-8862-652d5e7a11af",
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "geometry"
+                    "type": "number"
                 },
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.3711217183770883,
-                    "y": 0.5030120481927711,
+                    "x": 0.3733075435203094,
+                    "y": 0.33433734939759036,
                     "uniqueID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.4,
+                            "ioValue": 2.25,
                             "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
-                },
-                {
-                    "atomType": "Equation",
-                    "name": "x+x*y*4",
-                    "x": 0.2021164021164021,
-                    "y": 0.6144578313253012,
-                    "uniqueID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
-                    "ioValues": [
-                        {
-                            "name": "x",
-                            "ioValue": 2,
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 0.2,
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x+x*y"
                 },
                 {
                     "atomType": "Extrude",
@@ -243,8 +237,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.7374701670644391,
-                    "y": 0.5632530120481928,
+                    "x": 0.736943907156673,
+                    "y": 0.5662650602409639,
                     "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ioValues": [
                         {
@@ -259,8 +253,8 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": -40,
-                            "currentEquation": null
+                            "ioValue": -45,
+                            "currentEquation": "-45"
                         },
                         {
                             "name": "z-axis degrees",
@@ -459,26 +453,24 @@
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negative."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Singlehold_width",
+                    "x": 0.025384615384615384,
+                    "y": 0.8042168674698795,
+                    "uniqueID": "35e49bfd-6a93-4423-b937-e893e8bf13d3",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x",
-                    "ap1ID": "c006c75c-b540-4f0c-974f-6b9de511f380",
-                    "ap2ID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c"
-                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap1ID": "80b15cb8-5799-41af-84c0-17a1fac99f21",
                     "ap2ID": "1301a279-4e69-4548-8b78-87ed9fdd3fed"
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "diameter",
-                    "ap1ID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
-                    "ap2ID": "80b15cb8-5799-41af-84c0-17a1fac99f21"
                 },
                 {
                     "ap1Name": "geometry",
@@ -563,6 +555,12 @@
                     "ap2Name": "geometry",
                     "ap1ID": "eded5576-7c73-41c8-b817-dbe439bdb3c7",
                     "ap2ID": "dc76249d-f9c6-4a5f-9767-d53c24a6fd06"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "diameter",
+                    "ap1ID": "35e49bfd-6a93-4423-b937-e893e8bf13d3",
+                    "ap2ID": "80b15cb8-5799-41af-84c0-17a1fac99f21"
                 }
             ],
             "fileTypeVersion": 1,
@@ -571,18 +569,18 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.7379110251450677,
-            "y": 0.5210843373493976,
+            "x": 0.7147001934235977,
+            "y": 0.3704819277108434,
             "uniqueID": "fb092e29-90c1-4e41-9258-cc239a6650e4",
             "ioValues": [
                 {
                     "name": "Number",
-                    "ioValue": 10,
+                    "ioValue": 3,
                     "currentEquation": null
                 },
                 {
                     "name": "Geometry",
-                    "ioValue": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b",
+                    "ioValue": "f5123d1c-2f5b-4aa9-9fdb-02b5ce6f7e80",
                     "currentEquation": null
                 },
                 {
@@ -668,12 +666,12 @@
                     "ioValues": [
                         {
                             "name": "Shape",
-                            "ioValue": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b",
+                            "ioValue": "f5123d1c-2f5b-4aa9-9fdb-02b5ce6f7e80",
                             "currentEquation": null
                         },
                         {
                             "name": "Number",
-                            "ioValue": 10,
+                            "ioValue": 3,
                             "currentEquation": null
                         },
                         {
@@ -794,8 +792,8 @@
         {
             "atomType": "Molecule",
             "name": "Back Plate",
-            "x": 0.2669245647969052,
-            "y": 0.7680722891566265,
+            "x": 0.281431334622824,
+            "y": 0.7048192771084337,
             "uniqueID": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
             "ioValues": [
                 {
@@ -806,6 +804,11 @@
                 {
                     "name": "spice bottle diam",
                     "ioValue": 2,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Singlehold_width",
+                    "ioValue": 2.25,
                     "currentEquation": null
                 }
             ],
@@ -830,18 +833,18 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.3288201160541586,
-                    "y": 0.3463855421686747,
+                    "x": 0.32978723404255317,
+                    "y": 0.3283132530120482,
                     "uniqueID": "d739a171-605f-45d3-872a-a04437b05f45",
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 7.199999999999999,
-                            "currentEquation": null
+                            "ioValue": 3,
+                            "currentEquation": "3"
                         },
                         {
                             "name": "y length",
-                            "ioValue": 2,
+                            "ioValue": 8.100000000000001,
                             "currentEquation": null
                         }
                     ],
@@ -850,8 +853,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.5415860735009671,
-                    "y": 0.3463855421686747,
+                    "x": 0.5386847195357833,
+                    "y": 0.34939759036144574,
                     "uniqueID": "86125d4e-4d75-4df3-9921-1e8344783c59",
                     "ioValues": [
                         {
@@ -901,7 +904,7 @@
                         },
                         {
                             "name": "z",
-                            "ioValue": 2,
+                            "ioValue": 2.25,
                             "currentEquation": null
                         }
                     ],
@@ -911,8 +914,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.7852998065764023,
-                    "y": 0.45783132530120485,
+                    "x": 0.7872340425531915,
+                    "y": 0.47289156626506024,
                     "uniqueID": "a6a38257-1f13-46fa-ae24-d1b94d46850c",
                     "ioValues": [
                         {
@@ -926,7 +929,7 @@
                     "atomType": "Rotate",
                     "name": "Rotate",
                     "x": 0.6673114119922631,
-                    "y": 0.46686746987951805,
+                    "y": 0.4397590361445783,
                     "uniqueID": "8b22acfa-cb34-470c-8914-370c6e0097ae",
                     "ioValues": [
                         {
@@ -936,21 +939,31 @@
                         },
                         {
                             "name": "x-axis degrees",
-                            "ioValue": 90,
-                            "currentEquation": null
+                            "ioValue": 0,
+                            "currentEquation": "0"
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": 0,
-                            "currentEquation": null
+                            "ioValue": 90,
+                            "currentEquation": "90"
                         },
                         {
                             "name": "z-axis degrees",
-                            "ioValue": 90,
-                            "currentEquation": null
+                            "ioValue": 0,
+                            "currentEquation": "0"
                         }
                     ],
                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Singlehold_width",
+                    "x": 0.025384615384615384,
+                    "y": 0.6987951807228915,
+                    "uniqueID": "3ce34df6-ffd2-419f-ad1e-e3153cd4ea89",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [
@@ -973,14 +986,8 @@
                     "ap2ID": "866da071-004b-4141-b32b-15af211911f1"
                 },
                 {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "z",
-                    "ap1ID": "67f1a4b8-1b08-4cf0-a4a4-e0aa7550ba2a",
-                    "ap2ID": "866da071-004b-4141-b32b-15af211911f1"
-                },
-                {
                     "ap1Name": "result",
-                    "ap2Name": "x length",
+                    "ap2Name": "y length",
                     "ap1ID": "866da071-004b-4141-b32b-15af211911f1",
                     "ap2ID": "d739a171-605f-45d3-872a-a04437b05f45"
                 },
@@ -995,6 +1002,12 @@
                     "ap2Name": "Shape 1",
                     "ap1ID": "8b22acfa-cb34-470c-8914-370c6e0097ae",
                     "ap2ID": "a6a38257-1f13-46fa-ae24-d1b94d46850c"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "z",
+                    "ap1ID": "3ce34df6-ffd2-419f-ad1e-e3153cd4ea89",
+                    "ap2ID": "866da071-004b-4141-b32b-15af211911f1"
                 }
             ],
             "fileTypeVersion": 1,
@@ -1003,17 +1016,17 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.7891682785299807,
-            "y": 0.8042168674698795,
+            "x": 0.7630560928433269,
+            "y": 0.7228915662650602,
             "uniqueID": "06c28269-178d-439f-9a34-75b0fe8a093d",
             "ioValues": [
                 {
-                    "name": "Shape 1",
-                    "ioValue": "fb092e29-90c1-4e41-9258-cc239a6650e4"
-                },
-                {
                     "name": "Shape 3",
                     "ioValue": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
+                },
+                {
+                    "name": "Shape 4",
+                    "ioValue": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -1022,8 +1035,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5309477756286267,
-            "y": 0.8192771084337349,
+            "x": 0.5299806576402321,
+            "y": 0.8313253012048193,
             "uniqueID": "8fb131fb-c9d5-4473-9894-8101f01c59e2",
             "ioValues": [
                 {
@@ -1038,7 +1051,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0,
+                    "ioValue": 2.25,
                     "currentEquation": null
                 },
                 {
@@ -1115,20 +1128,253 @@
             "description": "Moves a shape laterally in X, Y, Z."
         },
         {
-            "atomType": "Difference",
-            "name": "Difference",
-            "x": 0.6518375241779497,
-            "y": 0.31626506024096385,
-            "uniqueID": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b",
+            "atomType": "GitHubMolecule",
+            "name": "Linear-Pattern",
+            "x": 0.632495164410058,
+            "y": 0.5903614457831325,
+            "uniqueID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb",
             "ioValues": [
                 {
-                    "name": "geometry1",
+                    "name": "Number",
+                    "ioValue": 3,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Geometry",
                     "ioValue": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
                     "currentEquation": null
                 },
                 {
+                    "name": "distX",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "distY",
+                    "ioValue": 2.25,
+                    "currentEquation": null
+                },
+                {
+                    "name": "distZ",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "228d0698-e1fc-4103-9984-985975a302e5",
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "79a08386-57ef-4454-a7aa-e98fe9c5b19c",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.27976190476190477,
+                    "y": 0.2116991643454039,
+                    "uniqueID": "49d31698-ac37-4924-8db4-bcda38f2333e",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Number",
+                    "x": 0.025384615384615384,
+                    "y": 0.32869080779944293,
+                    "uniqueID": "9cedd9ec-87f0-406f-9ca6-8f3714ac83f7",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Geometry",
+                    "x": 0.025384615384615384,
+                    "y": 0.9108635097493036,
+                    "uniqueID": "bd687206-c137-4f9a-96b5-ded964db5196",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "geometry"
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 0.49242424242424243,
+                    "y": 0.4337349397590362,
+                    "uniqueID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c",
+                    "ioValues": [
+                        {
+                            "name": "Shape",
+                            "ioValue": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Number",
+                            "ioValue": 3,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "distX",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "distY",
+                            "ioValue": 2.25,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "distZ",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Defines a Replicad code block.",
+                    "codeVersion": 1,
+                    "code": "//Inputs:[Shape, Number, distX, distY, distZ];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "distX",
+                    "x": 0.025384615384615384,
+                    "y": 0.5,
+                    "uniqueID": "6c2cbdcd-5321-4ceb-bcbb-73c39900577d",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "distY",
+                    "x": 0.025384615384615384,
+                    "y": 0.6174698795180722,
+                    "uniqueID": "b3b632f9-7a64-41de-b652-bcb528dcf547",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "distZ",
+                    "x": 0.025384615384615384,
+                    "y": 0.7650602409638555,
+                    "uniqueID": "5409bedd-efcc-4fac-8380-42515ae22a5b",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Number",
+                    "ap1ID": "9cedd9ec-87f0-406f-9ca6-8f3714ac83f7",
+                    "ap2ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Shape",
+                    "ap1ID": "bd687206-c137-4f9a-96b5-ded964db5196",
+                    "ap2ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c"
+                },
+                {
+                    "ap1Name": "output",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c",
+                    "ap2ID": "228d0698-e1fc-4103-9984-985975a302e5"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "distX",
+                    "ap1ID": "6c2cbdcd-5321-4ceb-bcbb-73c39900577d",
+                    "ap2ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "distY",
+                    "ap1ID": "b3b632f9-7a64-41de-b652-bcb528dcf547",
+                    "ap2ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "distZ",
+                    "ap1ID": "5409bedd-efcc-4fac-8380-42515ae22a5b",
+                    "ap2ID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c"
+                }
+            ],
+            "parentRepo": {
+                "lastFoundGit": "2025-09-10T15:47:14.806Z",
+                "privateRepo": false,
+                "repoName": "Linear-Pattern",
+                "dateCreated": "2025-02-19T00:40:13Z",
+                "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": 1739925613779,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/Linear-Pattern",
+                "topics": [],
+                "parentRepo": "BarbourSmith/Linear-Pattern",
+                "forks": 0,
+                "dateModified": "739483",
+                "ranking": 0,
+                "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times ",
+                "owner": "alzatin",
+                "description": "Returns the input shape formed into an assembly translated n times",
+                "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
+                "isLocal": false
+            },
+            "unitsKey": "MM",
+            "fileTypeVersion": 1,
+            "compiledBom": []
+        },
+        {
+            "atomType": "Input",
+            "name": "Singlehold_width",
+            "x": 0.025384615384615384,
+            "y": 0.7981927710843374,
+            "uniqueID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.8065764023210832,
+            "y": 0.5150602409638555,
+            "uniqueID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "06c28269-178d-439f-9a34-75b0fe8a093d",
+                    "currentEquation": null
+                },
+                {
                     "name": "geometry2",
-                    "ioValue": "f5123d1c-2f5b-4aa9-9fdb-02b5ce6f7e80",
+                    "ioValue": "fb092e29-90c1-4e41-9258-cc239a6650e4",
                     "currentEquation": null
                 }
             ],
@@ -1161,22 +1407,46 @@
             "ap2ID": "4613b1b2-7232-48c6-b3f2-c4e48134b149"
         },
         {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry1",
-            "ap1ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
-            "ap2ID": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b"
+            "ap1Name": "number or geometry",
+            "ap2Name": "Number",
+            "ap1ID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
+            "ap2ID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Number",
+            "ap1ID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
+            "ap2ID": "fb092e29-90c1-4e41-9258-cc239a6650e4"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "number per row",
+            "ap1ID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
+            "ap2ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd"
         },
         {
             "ap1Name": "geometry or number",
-            "ap2Name": "Shape 1",
+            "ap2Name": "Geometry",
+            "ap1ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
+            "ap2ID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry2",
             "ap1ID": "fb092e29-90c1-4e41-9258-cc239a6650e4",
-            "ap2ID": "06c28269-178d-439f-9a34-75b0fe8a093d"
+            "ap2ID": "5af8502f-c5cc-4a36-9be0-5e809647bb02"
         },
         {
             "ap1Name": "geometry or number",
             "ap2Name": "geometry",
             "ap1ID": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
             "ap2ID": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap1ID": "06c28269-178d-439f-9a34-75b0fe8a093d",
+            "ap2ID": "5af8502f-c5cc-4a36-9be0-5e809647bb02"
         },
         {
             "ap1Name": "geometry",
@@ -1198,15 +1468,33 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry2",
+            "ap2Name": "Geometry",
             "ap1ID": "f5123d1c-2f5b-4aa9-9fdb-02b5ce6f7e80",
-            "ap2ID": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b"
+            "ap2ID": "fb092e29-90c1-4e41-9258-cc239a6650e4"
         },
         {
-            "ap1Name": "geometry",
-            "ap2Name": "Geometry",
-            "ap1ID": "5bbac7a5-e2ad-4834-bb66-363b7fc8c91b",
-            "ap2ID": "fb092e29-90c1-4e41-9258-cc239a6650e4"
+            "ap1Name": "geometry or number",
+            "ap2Name": "Shape 4",
+            "ap1ID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb",
+            "ap2ID": "06c28269-178d-439f-9a34-75b0fe8a093d"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "yDist",
+            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ap2ID": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Singlehold_width",
+            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ap2ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Singlehold_width",
+            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ap2ID": "4613b1b2-7232-48c6-b3f2-c4e48134b149"
         }
     ],
     "unitsKey": "Inches",
