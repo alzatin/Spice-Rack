@@ -13,7 +13,7 @@
         {
             "name": "number per row",
             "ioValue": 3,
-            "currentEquation": null
+            "currentEquation": "3"
         },
         {
             "name": "Singlehold_width",
@@ -30,7 +30,13 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "965c161e-ce10-41ff-823d-e63df5bcf93d",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
+                    "currentEquation": null
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -1115,8 +1121,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.6305609284332688,
-            "y": 0.5813253012048193,
+            "x": 0.5705996131528047,
+            "y": 0.575301204819277,
             "uniqueID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb",
             "ioValues": [
                 {
@@ -1492,10 +1498,16 @@
             "ap2Name": "distY",
             "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
             "ap2ID": "fb092e29-90c1-4e41-9258-cc239a6650e4"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
+            "ap2ID": "965c161e-ce10-41ff-823d-e63df5bcf93d"
         }
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
