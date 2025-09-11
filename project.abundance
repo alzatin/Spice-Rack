@@ -16,14 +16,9 @@
             "currentEquation": null
         },
         {
-            "name": "Input (1)",
-            "ioValue": 10,
-            "currentEquation": null
-        },
-        {
             "name": "Singlehold_width",
-            "ioValue": 2.25,
-            "currentEquation": "2.25"
+            "ioValue": 2.5,
+            "currentEquation": "2.5"
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -59,20 +54,10 @@
             "type": "number"
         },
         {
-            "atomType": "Input",
-            "name": "Input (1)",
-            "x": 0.025384615384615384,
-            "y": 0.6475903614457831,
-            "uniqueID": "2f3f5cf8-9d91-46fc-ad58-98d8f1fcef2e",
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-            "type": "geometry"
-        },
-        {
             "atomType": "Molecule",
             "name": "Spice hole",
-            "x": 0.33462282398452614,
-            "y": 0.4307228915662651,
+            "x": 0.327852998065764,
+            "y": 0.4006024096385542,
             "uniqueID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
             "ioValues": [
                 {
@@ -87,7 +72,7 @@
                 },
                 {
                     "name": "Singlehold_width",
-                    "ioValue": 2.25,
+                    "ioValue": 2.5,
                     "currentEquation": null
                 }
             ],
@@ -138,7 +123,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.25,
+                            "ioValue": 2.5,
                             "currentEquation": null
                         }
                     ],
@@ -237,8 +222,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.736943907156673,
-                    "y": 0.5662650602409639,
+                    "x": 0.728239845261122,
+                    "y": 0.5813253012048193,
                     "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ioValues": [
                         {
@@ -253,8 +238,8 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": -45,
-                            "currentEquation": "-45"
+                            "ioValue": -43,
+                            "currentEquation": "-43"
                         },
                         {
                             "name": "z-axis degrees",
@@ -590,7 +575,7 @@
                 },
                 {
                     "name": "distY",
-                    "ioValue": 2.25,
+                    "ioValue": 2.5,
                     "currentEquation": null
                 },
                 {
@@ -681,7 +666,7 @@
                         },
                         {
                             "name": "distY",
-                            "ioValue": 2.25,
+                            "ioValue": 2.5,
                             "currentEquation": null
                         },
                         {
@@ -792,8 +777,8 @@
         {
             "atomType": "Molecule",
             "name": "Back Plate",
-            "x": 0.281431334622824,
-            "y": 0.7048192771084337,
+            "x": 0.28433268858800775,
+            "y": 0.6656626506024096,
             "uniqueID": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
             "ioValues": [
                 {
@@ -808,7 +793,7 @@
                 },
                 {
                     "name": "Singlehold_width",
-                    "ioValue": 2.25,
+                    "ioValue": 2.5,
                     "currentEquation": null
                 }
             ],
@@ -833,18 +818,18 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.32978723404255317,
-                    "y": 0.3283132530120482,
+                    "x": 0.33365570599613154,
+                    "y": 0.3192771084337349,
                     "uniqueID": "d739a171-605f-45d3-872a-a04437b05f45",
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 3,
-                            "currentEquation": "3"
+                            "ioValue": 4,
+                            "currentEquation": "4"
                         },
                         {
                             "name": "y length",
-                            "ioValue": 8.100000000000001,
+                            "ioValue": 7.5,
                             "currentEquation": null
                         }
                     ],
@@ -904,18 +889,18 @@
                         },
                         {
                             "name": "z",
-                            "ioValue": 2.25,
+                            "ioValue": 2.5,
                             "currentEquation": null
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x *( z*.2+z)"
+                    "currentEquation": "x *z"
                 },
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.7872340425531915,
-                    "y": 0.47289156626506024,
+                    "x": 0.7862669245647969,
+                    "y": 0.46987951807228917,
                     "uniqueID": "a6a38257-1f13-46fa-ae24-d1b94d46850c",
                     "ioValues": [
                         {
@@ -1035,8 +1020,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5299806576402321,
-            "y": 0.8313253012048193,
+            "x": 0.528046421663443,
+            "y": 0.8403614457831325,
             "uniqueID": "8fb131fb-c9d5-4473-9894-8101f01c59e2",
             "ioValues": [
                 {
@@ -1051,13 +1036,13 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 2.25,
+                    "ioValue": 2.5,
                     "currentEquation": null
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 1.5,
-                    "currentEquation": "1.5"
+                    "ioValue": 2,
+                    "currentEquation": "2"
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -1130,8 +1115,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.632495164410058,
-            "y": 0.5903614457831325,
+            "x": 0.6305609284332688,
+            "y": 0.5813253012048193,
             "uniqueID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb",
             "ioValues": [
                 {
@@ -1151,7 +1136,7 @@
                 },
                 {
                     "name": "distY",
-                    "ioValue": 2.25,
+                    "ioValue": 2.5,
                     "currentEquation": null
                 },
                 {
@@ -1242,7 +1227,7 @@
                         },
                         {
                             "name": "distY",
-                            "ioValue": 2.25,
+                            "ioValue": 2.5,
                             "currentEquation": null
                         },
                         {
@@ -1354,7 +1339,7 @@
             "atomType": "Input",
             "name": "Singlehold_width",
             "x": 0.025384615384615384,
-            "y": 0.7981927710843374,
+            "y": 0.8042168674698795,
             "uniqueID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -1363,8 +1348,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.8065764023210832,
-            "y": 0.5150602409638555,
+            "x": 0.7988394584139266,
+            "y": 0.5180722891566265,
             "uniqueID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
             "ioValues": [
                 {
@@ -1495,6 +1480,18 @@
             "ap2Name": "Singlehold_width",
             "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
             "ap2ID": "4613b1b2-7232-48c6-b3f2-c4e48134b149"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "distY",
+            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ap2ID": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "distY",
+            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
+            "ap2ID": "fb092e29-90c1-4e41-9258-cc239a6650e4"
         }
     ],
     "unitsKey": "Inches",
