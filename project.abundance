@@ -806,8 +806,8 @@
         {
             "atomType": "Molecule",
             "name": "Back Plate",
-            "x": 0.3355899419729207,
-            "y": 0.8373493975903615,
+            "x": 0.3529980657640232,
+            "y": 0.7560240963855422,
             "uniqueID": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
             "ioValues": [
                 {
@@ -1060,8 +1060,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5261121856866537,
-            "y": 0.8222891566265061,
+            "x": 0.5870406189555126,
+            "y": 0.7921686746987953,
             "uniqueID": "8fb131fb-c9d5-4473-9894-8101f01c59e2",
             "ioValues": [
                 {
@@ -1071,12 +1071,12 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": -1.25,
-                    "currentEquation": "-1.250"
+                    "ioValue": 0,
+                    "currentEquation": "0"
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 2.5,
+                    "ioValue": -0.5,
                     "currentEquation": null
                 },
                 {
@@ -1404,6 +1404,32 @@
                 }
             ],
             "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2514506769825919,
+            "y": 0.9186746987951807,
+            "uniqueID": "a44db500-6bee-4e4c-aa29-b849a0a6ec92",
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1,
+                    "currentEquation": null
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1,
+                    "currentEquation": null
+                },
+                {
+                    "name": "t",
+                    "ioValue": 1,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "(x*y)/2-t"
         }
     ],
     "allConnectors": [
@@ -1505,12 +1531,6 @@
         },
         {
             "ap1Name": "number or geometry",
-            "ap2Name": "yDist",
-            "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
-            "ap2ID": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
-        },
-        {
-            "ap1Name": "number or geometry",
             "ap2Name": "Singlehold_width",
             "ap1ID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
             "ap2ID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd"
@@ -1538,6 +1558,12 @@
             "ap2Name": "number or geometry",
             "ap1ID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
             "ap2ID": "965c161e-ce10-41ff-823d-e63df5bcf93d"
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap1ID": "a44db500-6bee-4e4c-aa29-b849a0a6ec92",
+            "ap2ID": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
         }
     ],
     "unitsKey": "Inches",
