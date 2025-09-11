@@ -14,6 +14,11 @@
             "name": "number per row",
             "ioValue": 3,
             "currentEquation": null
+        },
+        {
+            "name": "Input (1)",
+            "ioValue": 10,
+            "currentEquation": null
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -42,7 +47,7 @@
             "atomType": "Input",
             "name": "number per row",
             "x": 0.025384615384615384,
-            "y": 0.5783132530120482,
+            "y": 0.4969879518072289,
             "uniqueID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -164,7 +169,7 @@
                         {
                             "name": "y",
                             "ioValue": 0.2,
-                            "currentEquation": "0.2"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -890,6 +895,16 @@
             "unitsKey": "MM",
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Input",
+            "name": "Input (1)",
+            "x": 0.025384615384615384,
+            "y": 0.6475903614457831,
+            "uniqueID": "2f3f5cf8-9d91-46fc-ad58-98d8f1fcef2e",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "geometry"
         }
     ],
     "allConnectors": [
