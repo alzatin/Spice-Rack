@@ -30,7 +30,13 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "965c161e-ce10-41ff-823d-e63df5bcf93d",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
+                    "currentEquation": null
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -56,8 +62,8 @@
         {
             "atomType": "Molecule",
             "name": "Spice hole",
-            "x": 0.2775628626692456,
-            "y": 0.45180722891566266,
+            "x": 0.27272727272727276,
+            "y": 0.45481927710843373,
             "uniqueID": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
             "ioValues": [
                 {
@@ -222,8 +228,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.728239845261122,
-                    "y": 0.5813253012048193,
+                    "x": 0.7301740812379109,
+                    "y": 0.608433734939759,
                     "uniqueID": "c5663158-fb0c-46d4-8f37-eeb04c89ae53",
                     "ioValues": [
                         {
@@ -238,8 +244,8 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": -43,
-                            "currentEquation": "-43"
+                            "ioValue": -36,
+                            "currentEquation": "-36"
                         },
                         {
                             "name": "z-axis degrees",
@@ -800,8 +806,8 @@
         {
             "atomType": "Molecule",
             "name": "Back Plate",
-            "x": 0.22823984526112184,
-            "y": 0.8313253012048193,
+            "x": 0.3355899419729207,
+            "y": 0.8192771084337349,
             "uniqueID": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
             "ioValues": [
                 {
@@ -841,18 +847,18 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.33365570599613154,
-                    "y": 0.3192771084337349,
+                    "x": 0.40232108317214704,
+                    "y": 0.2921686746987952,
                     "uniqueID": "d739a171-605f-45d3-872a-a04437b05f45",
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 4,
-                            "currentEquation": "4"
+                            "ioValue": 3,
+                            "currentEquation": "3"
                         },
                         {
                             "name": "y length",
-                            "ioValue": 7.5,
+                            "ioValue": 6.5,
                             "currentEquation": null
                         }
                     ],
@@ -901,8 +907,8 @@
                 {
                     "atomType": "Equation",
                     "name": "Equation",
-                    "x": 0.18568665377176014,
-                    "y": 0.5060240963855421,
+                    "x": 0.183752417794971,
+                    "y": 0.5180722891566265,
                     "uniqueID": "866da071-004b-4141-b32b-15af211911f1",
                     "ioValues": [
                         {
@@ -914,10 +920,15 @@
                             "name": "z",
                             "ioValue": 2.5,
                             "currentEquation": null
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 2,
+                            "currentEquation": null
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x *z"
+                    "currentEquation": "x *z-y/2"
                 },
                 {
                     "atomType": "Assembly",
@@ -994,6 +1005,12 @@
                     "ap2ID": "866da071-004b-4141-b32b-15af211911f1"
                 },
                 {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y",
+                    "ap1ID": "67f1a4b8-1b08-4cf0-a4a4-e0aa7550ba2a",
+                    "ap2ID": "866da071-004b-4141-b32b-15af211911f1"
+                },
+                {
                     "ap1Name": "result",
                     "ap2Name": "y length",
                     "ap1ID": "866da071-004b-4141-b32b-15af211911f1",
@@ -1064,8 +1081,8 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 2,
-                    "currentEquation": "2"
+                    "ioValue": 3,
+                    "currentEquation": "3"
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -1371,8 +1388,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.7988394584139266,
-            "y": 0.5180722891566265,
+            "x": 0.8046421663442941,
+            "y": 0.5210843373493976,
             "uniqueID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
             "ioValues": [
                 {
