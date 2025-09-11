@@ -143,7 +143,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 5,
+                            "ioValue": 2.4,
                             "currentEquation": null
                         }
                     ],
@@ -152,23 +152,23 @@
                 {
                     "atomType": "Equation",
                     "name": "x+x*y*4",
-                    "x": 0.20105820105820105,
-                    "y": 0.5993975903614458,
+                    "x": 0.2021164021164021,
+                    "y": 0.6144578313253012,
                     "uniqueID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c",
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 1,
+                            "ioValue": 2,
                             "currentEquation": null
                         },
                         {
                             "name": "y",
-                            "ioValue": 1,
-                            "currentEquation": null
+                            "ioValue": 0.2,
+                            "currentEquation": "0.2"
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x+x*y*4"
+                    "currentEquation": "x+x*y"
                 },
                 {
                     "atomType": "Extrude",
@@ -539,6 +539,12 @@
                     "ap2ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def"
                 },
                 {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap1ID": "c006c75c-b540-4f0c-974f-6b9de511f380",
+                    "ap2ID": "52ba8b38-f936-4fc4-85d5-49051c0cfa4c"
+                },
+                {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap1ID": "98f04fe3-e4b1-4b5b-be46-a2a019203def",
@@ -665,8 +671,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.4153742414025624,
-            "y": 0.4939759036144578,
+            "x": 0.5386243386243387,
+            "y": 0.5331325301204819,
             "uniqueID": "fb092e29-90c1-4e41-9258-cc239a6650e4",
             "ioValues": [
                 {
