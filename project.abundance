@@ -42,7 +42,7 @@
         {
             "atomType": "Input",
             "name": "spice bottle diam",
-            "x": 0.025384615384615384,
+            "x": 0.05499999999999999,
             "y": 0.41566265060240964,
             "uniqueID": "606e49b9-399a-41f9-8d22-9ae6f11e27f0",
             "ioValues": [],
@@ -52,7 +52,7 @@
         {
             "atomType": "Input",
             "name": "number per row",
-            "x": 0.025384615384615384,
+            "x": 0.05499999999999999,
             "y": 0.4969879518072289,
             "uniqueID": "adcc8c6a-a1d9-429f-a6b6-5db92863781a",
             "ioValues": [],
@@ -176,7 +176,7 @@
         {
             "atomType": "Input",
             "name": "Singlehold_width",
-            "x": 0.025384615384615384,
+            "x": 0.05499999999999999,
             "y": 0.8042168674698795,
             "uniqueID": "f8f83e95-d8dc-4c88-9733-ac00af423ea0",
             "ioValues": [],
@@ -273,7 +273,7 @@
                 {
                     "atomType": "Input",
                     "name": "spice bottle diam",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.39457831325301207,
                     "uniqueID": "c006c75c-b540-4f0c-974f-6b9de511f380",
                     "ioValues": [],
@@ -283,7 +283,7 @@
                 {
                     "atomType": "Input",
                     "name": "number per row",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.572289156626506,
                     "uniqueID": "f42cb6e0-808f-4418-8862-652d5e7a11af",
                     "ioValues": [],
@@ -618,7 +618,7 @@
                 {
                     "atomType": "Input",
                     "name": "Singlehold_width",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.8042168674698795,
                     "uniqueID": "35e49bfd-6a93-4423-b937-e893e8bf13d3",
                     "ioValues": [],
@@ -824,7 +824,7 @@
                 {
                     "atomType": "Input",
                     "name": "Number",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.32869080779944293,
                     "uniqueID": "8ae368fe-7e41-497f-9404-029fc52ec664",
                     "ioValues": [],
@@ -834,7 +834,7 @@
                 {
                     "atomType": "Input",
                     "name": "Geometry",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.9108635097493036,
                     "uniqueID": "443b0c46-7a64-439b-a8ac-108c05173da5",
                     "ioValues": [],
@@ -881,7 +881,7 @@
                 {
                     "atomType": "Input",
                     "name": "distX",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.5,
                     "uniqueID": "68a83f1f-d58f-4795-92ca-c8d98d828b9b",
                     "ioValues": [],
@@ -891,7 +891,7 @@
                 {
                     "atomType": "Input",
                     "name": "distY",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.6174698795180722,
                     "uniqueID": "649d9654-973f-40df-94cb-8cc1c2c25dee",
                     "ioValues": [],
@@ -901,7 +901,7 @@
                 {
                     "atomType": "Input",
                     "name": "distZ",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.7650602409638555,
                     "uniqueID": "7d72db29-631a-45c4-84c5-2a13c5a78d8d",
                     "ioValues": [],
@@ -1057,7 +1057,7 @@
                 {
                     "atomType": "Input",
                     "name": "number per row",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.6295180722891566,
                     "uniqueID": "3288deee-f4f9-4cf2-b165-9b9a19f24279",
                     "ioValues": [],
@@ -1067,7 +1067,7 @@
                 {
                     "atomType": "Input",
                     "name": "spice bottle diam",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.3614457831325301,
                     "uniqueID": "67f1a4b8-1b08-4cf0-a4a4-e0aa7550ba2a",
                     "ioValues": [],
@@ -1147,7 +1147,7 @@
                 {
                     "atomType": "Input",
                     "name": "Singlehold_width",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.6987951807228915,
                     "uniqueID": "3ce34df6-ffd2-419f-ad1e-e3153cd4ea89",
                     "ioValues": [],
@@ -1282,7 +1282,7 @@
                 {
                     "atomType": "Input",
                     "name": "Number",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.32869080779944293,
                     "uniqueID": "9cedd9ec-87f0-406f-9ca6-8f3714ac83f7",
                     "ioValues": [],
@@ -1292,7 +1292,7 @@
                 {
                     "atomType": "Input",
                     "name": "Geometry",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.9108635097493036,
                     "uniqueID": "bd687206-c137-4f9a-96b5-ded964db5196",
                     "ioValues": [],
@@ -1339,7 +1339,7 @@
                 {
                     "atomType": "Input",
                     "name": "distX",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.5,
                     "uniqueID": "6c2cbdcd-5321-4ceb-bcbb-73c39900577d",
                     "ioValues": [],
@@ -1349,7 +1349,7 @@
                 {
                     "atomType": "Input",
                     "name": "distY",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.6174698795180722,
                     "uniqueID": "b3b632f9-7a64-41de-b652-bcb528dcf547",
                     "ioValues": [],
@@ -1359,7 +1359,7 @@
                 {
                     "atomType": "Input",
                     "name": "distZ",
-                    "x": 0.025384615384615384,
+                    "x": 0.05499999999999999,
                     "y": 0.7650602409638555,
                     "uniqueID": "5409bedd-efcc-4fac-8380-42515ae22a5b",
                     "ioValues": [],
