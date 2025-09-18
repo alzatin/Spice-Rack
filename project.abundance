@@ -30,13 +30,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "965c161e-ce10-41ff-823d-e63df5bcf93d",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
-                    "currentEquation": null
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -68,11 +62,11 @@
             "ioValues": [
                 {
                     "name": "Shape 3",
-                    "ioValue": "8fb131fb-c9d5-4473-9894-8101f01c59e2"
+                    "ioValue": null
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": "fa36a1e3-1fe4-4d93-9223-2d828d16f7cb"
+                    "ioValue": null
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -85,11 +79,6 @@
             "y": 0.7921686746987953,
             "uniqueID": "8fb131fb-c9d5-4473-9894-8101f01c59e2",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "4613b1b2-7232-48c6-b3f2-c4e48134b149",
-                    "currentEquation": null
-                },
                 {
                     "name": "xDist",
                     "ioValue": -1.25,
@@ -189,18 +178,7 @@
             "x": 0.8046421663442941,
             "y": 0.5210843373493976,
             "uniqueID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": "06c28269-178d-439f-9a34-75b0fe8a093d",
-                    "currentEquation": null
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": "fb092e29-90c1-4e41-9258-cc239a6650e4",
-                    "currentEquation": null
-                }
-            ],
+            "ioValues": [],
             "description": "Subtracts shape two from shape one."
         },
         {
@@ -261,13 +239,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "e3cad587-90cb-4f2b-8da8-e0b234d3c40f",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "ac403c46-1439-443d-ba6b-4e3a16c74b59",
-                            "currentEquation": null
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -582,11 +554,6 @@
                     "y": 0.7740963855421686,
                     "uniqueID": "ac403c46-1439-443d-ba6b-4e3a16c74b59",
                     "ioValues": [
-                        {
-                            "name": "geometry1",
-                            "ioValue": "58656422-380a-477f-858d-0e11bbcdfb2f",
-                            "currentEquation": null
-                        },
                         {
                             "name": "geometry2",
                             "ioValue": "6b1b7913-34b6-4130-b613-c2e24d89fbd3",
@@ -1221,11 +1188,6 @@
                     "currentEquation": null
                 },
                 {
-                    "name": "Geometry",
-                    "ioValue": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
-                    "currentEquation": null
-                },
-                {
                     "name": "distX",
                     "ioValue": 0,
                     "currentEquation": null
@@ -1250,13 +1212,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "228d0698-e1fc-4103-9984-985975a302e5",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "79a08386-57ef-4454-a7aa-e98fe9c5b19c",
-                            "currentEquation": null
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1306,11 +1262,6 @@
                     "y": 0.4337349397590362,
                     "uniqueID": "79a08386-57ef-4454-a7aa-e98fe9c5b19c",
                     "ioValues": [
-                        {
-                            "name": "Shape",
-                            "ioValue": "253d11cd-79e4-41d8-b6ec-cd07ae40a1cd",
-                            "currentEquation": null
-                        },
                         {
                             "name": "Number",
                             "ioValue": 5,
