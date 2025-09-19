@@ -62,8 +62,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.7135922330097088,
-            "y": 0.6516129032258065,
+            "x": 0.6807511737089201,
+            "y": 0.22580645161290322,
             "uniqueID": "06c28269-178d-439f-9a34-75b0fe8a093d",
             "ioValues": [
                 {
@@ -186,8 +186,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.8359223300970874,
-            "y": 0.3419354838709677,
+            "x": 0.8338028169014085,
+            "y": 0.7645161290322581,
             "uniqueID": "5af8502f-c5cc-4a36-9be0-5e809647bb02",
             "ioValues": [
                 {
@@ -1430,6 +1430,21 @@
             "unitsKey": "MM",
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.8140845070422535,
+            "y": 0.48387096774193544,
+            "uniqueID": "fbf95834-58c2-4814-bab0-ffbac3f5f4e7",
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
